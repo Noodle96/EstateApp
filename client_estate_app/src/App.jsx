@@ -1,7 +1,9 @@
+import "./layout.scss";
+
 function App() {
   return (
-    <div>
-      <a href="/">Hellosss </a>
+    <div className='layout'>
+      {/* <Navbar /> */}
     </div>
   )
 }
