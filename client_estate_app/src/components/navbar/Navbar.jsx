@@ -1,22 +1,39 @@
+import { useState } from "react";
 import "./navbar.scss";
 
 const Navbar = () => {
-    return (
-      <nav>
-          <div className="left">
-            <a href="/" className="logo">
-              <img src="/logo.png" alt="logo" />
-              <span>EstateApp</span>
-            </a>
-            <a href="">Home</a>
-            <a href="">About</a>
-            <a href="">Contact</a>
-            <a href="">Agents</a>
+  const [open, setOpen] = useState(false);
+  return (
+    <nav>
+        <div className="left">
+          <a href="/" className="logo">
+            <img src="/logo.png" alt="logo" />
+            <span>CachinaPE</span>
+          </a>
+          <a href="">Tienda</a>
+          <a href="">Vender</a>
+          <a href="">Categorias</a>
+          <a href="">Sostenibilidad</a>
+        </div>
+        <div className="right">
+          <a href="/">Sig In</a>
+          <a href="/" className="register">Sign Up</a>
+          <div className="menuIcon">
+            <img
+              src="/menu.png"
+              alt="menu"
+              onClick={() => setOpen(!open)}
+            />
           </div>
-          <div className="right">
-            <a href="/">Sig In</a>
-            <a href="/" className="register">Sign Up</a>
+          <div className={open ? "menu active": "menu"}>
+            <a href="">Tienda</a>
+            <a href="">Vender</a>
+            <a href="">Categorias</a>
+            <a href="">Sostenibilidad</a>
+            <a href="">Sign in</a>
+            <a href="">Sign up</a>
           </div>
+        </div>
     </nav>
   )
 }
