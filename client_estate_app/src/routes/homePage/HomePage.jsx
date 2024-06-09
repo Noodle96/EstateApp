@@ -1,3 +1,4 @@
+import SearchBar from '../../components/searchBar/SearchBar';
 import './homePage.scss';
 
 function HomePage() {
@@ -5,8 +6,8 @@ function HomePage() {
         <div className='homepage'>
             <div className="textContainer">
                 <div className="wrapper">
-                    <h1>
-                        La web peruana más grande de ropa de segunda mano seleccionada
+                    <h1 className='title'>
+                       CachinaPe: The best Place to find your dream home
                     </h1>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -15,6 +16,21 @@ function HomePage() {
                         Aperiam vero, quidem laudantium labore amet blanditiis 
                         illum dolorem.
                     </p>
+                    <SearchBar /> 
+                    <div className="boxes">
+                        <div className="box">
+                            <h1>Abc</h1>
+                            <h2>Lorem ipsum</h2>
+                        </div>
+                        <div className="box">
+                            <h1>Abc</h1>
+                            <h2>Lorem ipsum</h2>
+                        </div>
+                        <div className="box">
+                            <h1>Abc</h1>
+                            <h2>Lorem ipsum</h2>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div className="imgContainer">

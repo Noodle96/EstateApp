@@ -11,12 +11,6 @@ function App() {
               <div className="content">
                   <HomePage />
               </div>
-              <div className="noticias">
-                  Noticias
-              </div>
-              <div className="deportes">
-                  Deportes
-              </div>
         </div>
     )
 }
